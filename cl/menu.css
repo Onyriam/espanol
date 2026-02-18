@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    max-width: 3rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%; /* para asegurar que la imagen se muestre como un círculo */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Valores de ejemplo para la sombra */
+}
+.texto-encabezado {
+    display: flex;
+    flex-direction: column; /* Organiza los span en columnas */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Alinea el texto a la izquierda */
+}
+
+.header-text {
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-list {
+        margin-top: 3rem; /* Ajusta este valor según sea necesario */
+        gap: 1rem;
+    }
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+    position: absolute;
+    top: 0.1rem; /* Aumenta este valor si quieres más espacio en la parte superior */
+    right: 0.1rem; /* Aumenta este valor si quieres más espacio en el lado derecho */
+    padding: 1rem; /* Esto hace que el área tocable sea más grande */
+    color: #000000;
+    z-index: 2; /* Asegura que el botón esté por encima de los demás elementos */
+    font-size: 3rem; /* Ajusta el tamaño del ícono si es necesario */
+    background: transparent; /* O cualquier otro color de fondo que prefieras */
+    border: none; /* Elimina el borde si hay uno */
+    cursor: pointer;
+}
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Alinea los elementos al inicio (izquierda) */
+        gap: 1rem;
+        position: fixed; /* Cambiado de 'absolute' a 'fixed' para que sea relativo a la ventana */
+        top: 0;
+        left: 0; /* Alinea el menú a la izquierda */
+        bottom: 0;
+        width: 60%; /* Puedes ajustar este ancho según necesites */
+        background-image: url('https://mini-uroki.com/cl/im/menu-01.jpg'); /* Reemplaza con la URL de tu imagen */
+        background-size: cover; /* Esto asegura que la imagen cubra todo el contenedor */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        /* background-color: rgba(168, 221, 231, 0.95); Ajusta el último número para la transparencia */
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: all 0.3s; /* Agrega una transición suave */
+        transform: translateX(-100%); /* Esconde el menú fuera de la vista */
+        z-index: 3;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0); /* Mueve el menú a su posición visible */
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: start; /* Asegúrate de que los enlaces estén alineados a la izquierda */
+    }
+
+    .nav-list li a {
+        color: #000000;
+        font-size: 1.2em;
+    }
+}

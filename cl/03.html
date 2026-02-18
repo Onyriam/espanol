@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-36942F4VZ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-36942F4VZ4');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <title>самостоятельное обучение</title>
+    
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e7d1a8;    
+  }
+  .h1 {
+    font-family: Vollkorn, serif;
+    font-weight: bold;
+    margin-top: 0px;   
+    margin-bottom: 5px;
+  }
+  .h2 {
+    font-family: Vollkorn, serif;
+    font-size: 30px; 
+    margin-top: 0px;   
+    margin-bottom: 5px;
+  }
+  .h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    margin-top: 0px;     
+    color: blue;
+    margin-bottom: 5px;
+  }
+  .contenedor {
+    width: 90%;
+    margin: auto;
+    border: 0px solid blue;
+    padding: 5px;
+  }
+  .recuadro-titulo {
+    margin: 5px 0;
+    background: #d1f2fd;
+    border-radius: 10px;
+    border: 0px solid black;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 15px;
+  }
+  .botoncito {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  margin: 5px auto; /* Centra el botón en su contenedor */
+  background-image: url('http://mini-uroki.com//pc/imagenes/botoncito1.png');
+  background-repeat: no-repeat;
+  background-position: center; /* Centra la imagen de fondo */
+  background-size: contain; /* Ajusta la imagen para que se ajuste al botón */
+  border: 0px solid black;
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  height: 43px; /* Altura del botón */
+  width: 330px; /* Ancho del botón */
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.7));
+}
+
+
+  .recuadro-blanco {    /*sin ángulos redondeados */
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    text-align: left;
+    padding: 5px;
+  }
+  .recuadro-blanco-superior { /* redondesdos los ángulo sup izq y der*/
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    text-align: center;
+    border-radius: 10px 10px 0 0; 
+    padding: 5px;
+  }
+  .recuadro-blanco-inferior { /* redondesdos los ángulo inf der e izq */
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    text-align: left;
+    border-radius: 0 0 10px 10px; 
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .recuadro-blanco-superior-inferior { /* todos los bordes redondeados */
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    text-align: left;
+    border-radius: 10px; 
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .fuente-parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    margin-top: 0px; 
+  }
+  .fuente-mensaje {
+    font-family: Vollkorn, serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -10px;   
+    margin-bottom: 5px;    
+  }
+  .fuente-titulos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;   
+    margin-bottom: 0px;    
+  }
+  .recuadro-fuente-precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .recuadro-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    z-index: 1;
+  }
+  .recuadro-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .recuadro-iconos-pago{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
+  .icono {
+    margin: 5px; /* Esto añade un margen de 5px alrededor de cada ícono */
+}
+
+
+
+    </style>
+    <link rel="stylesheet" href="http://mini-uroki.com//cl/menu.css">
+</head>
+<body>
+    <!---------------------------------------------MENú------------------------------------------------------------------------------------------->
+<header>
+    <img class="logo" src="https://mini-uroki.com//cl/im/ico1.png" alt="Logo">
+    <div class="texto-encabezado">
+        <span class="header-text">Мини-уроки</span>
+        <span class="header-text">испанского языка</span> 
+    </div>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="https://mini-uroki.com/cl/01.html">индивидуальные занятия</a></li>
+                <li><a href="https://mini-uroki.com/cl/02.html">разговорный клуб</a></li>
+                <li><a href="https://mini-uroki.com/cl/03.html">самостоятельное обучение</a></li>
+                <li><a href="https://mini-uroki.com/cl/04.html">бесплатные встречи в Zoom</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  <!--------------------------------------------------------------FIN DEL ------------------------------------------------------------------------> 
+  <!----------------------------------------------------------RECUADRO DEL TÍTULO-----------------------------------------------------------------> 
+
+    <div class="contenedor">
+        <div class="recuadro-titulo"><h1 class="h1">Cамостоятельное обучение</h1></div>
+        
+                    <!--------------------------------------Мини-уроки испанского -------------------------------------------->         
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Мини-уроки испанского языка</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oMIoppwtX8Q?si=t7Kr1CQ7mE7KjSqf" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">Более сорока мини-уроков продолжительностью около 10 минут, на которых обсуждаются конкретные темы испанской грамматики (2010 г.), с очень краткими историческими или этимологическими комментариями, которые помогут вашему пониманию. Здесь вы не найдете призывов подписаться на канал, а также не увидите ютубера, просящего лайки, комментарии и нажимающего колокольчик. Просто пояснения, упражнения и полезные комментарии.</p></div>
+                    
+                    <!--------------------------------------Бесплатные уроки (A1-A2) --------------------------------------------> 
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Бесплатные уроки (A1-A2)</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/IH7cmi0LNQs?si=gXcsWcic4ClfDbqL" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">Мои студенты и некоторые из моих подписчиков еженедельно участвуют в моих бесплатных встречах Zoom. Каждую субботу мы встречаемся, чтобы попрактиковаться в том, что мы узнали на частных уроках или в мини-уроках, опубликованных в предыдущем разделе. Если вы хотите присоединиться к нам, вам просто нужно заполнить форму, расположенную в соответствующем разделе.</p></div>
+                    <!--------------------------------------Lecciones gratuitas (B1-B2)--------------------------------------------> 
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Lecciones gratuitas (B1-B2)</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/XQUX0m9tECQ?si=5lmVGkFcyq_pSLO7" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">То же, что и бесплатные уроки начального уровня, но для продвинутого уровня. Эти встречи проходят каждую субботу, в конце первой. Даже некоторые участники из предыдущей группы осмеливаются участвовать в этой группе. В отличие от предыдущей группы, в этой группе запрещено говорить по-русски.</p></div>
+
+                            <!--------------------------------------Двуязычные рассказы--------------------------------------------> 
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Двуязычные рассказы</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/LpPblslLbI8?si=2lm9ve2AYjuCijhv" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">Каждый день я публикую в Телеграм небольшой фрагмент рассказа, в который вам нужно добавить недостающие слова, используя предложенные варианты. В конце месяца я публикую видео с двуязычными субтитрами, где я читаю вслух весь текст целиком.</p></div>
+
+                                    <!--------------------------------------Двуязычные рассказы (A1-A2)-------------------------------------------> 
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Двуязычные рассказы (A1-A2)</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/D_shxwASmJA?si=EXsDmZ7fdwTi4wjo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">То же, что и предыдущие истории, но рассчитано на начальный уровень и прорабатывается на субботних встречах с моими дорогими учениками и подписчиками.</p></div>
+
+                        <!--------------------------------------Телеграм-Канал------------------------------------------> 
+
+        <div class="recuadro-blanco-superior"><div class="botoncito">Телеграм-Канал</div></div>
+        <div class="recuadro-blanco"><div class="recuadro-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/eR9Oa6PHNAA?si=ZoeITpWzdqPgKluG" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        <div class="recuadro-blanco-inferior"><p class="fuente-parrafo">Телеграм-канал, где я публикую упражнения по ежемесячным сториз. В этом видео за две с небольшим минуты я расскажу вам, как принять участие в «Истории месяца» и как она развивалась с момента своего появления в качестве «Текста недели». Вот ссылка для входа в <a href="https://t.me/mini_uroki_ispanskovo_yazika" target="_blank">Телеграм-Канал</a></div>
+    </div>
+        
+    
+    <script src="http://mini-uroki.com//cl/menu.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
