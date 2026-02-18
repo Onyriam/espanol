@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36942F4VZ4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-36942F4VZ4');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Персонализированные курсы испанского языка для русских.">
+    <meta name="author" content="Martín López">
+    <meta name="keywords" content="aprender español, cursos de español, lecciones de español, español para rusos">
+    <title>inicio</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Vollkorn', serif;
+            text-align: center;
+        }
+        .fondo-animado {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background-image: url('http://mini-uroki.com//pc/imagenes/til5.jpg');
+            background-repeat: repeat;
+            animation: zoomFondo 20s infinite alternate ease-in-out;
+        }
+        @keyframes zoomFondo {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+        .header {
+            text-align: center;
+        }
+        .header a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #ffffff; /* Color base negro para el texto */
+            padding: 10px 15px;
+            margin: 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: transparent;
+            transition: text-shadow 0.5s ease, color 0.5s ease; /* Transición suave para el efecto de sombra y cambio de color */
+        }
+        .header a:hover {
+            color: #FFFFFF; /* Cambia el color del texto a blanco */
+            text-shadow:
+                0 0 10px #0000FF, /* Capa de brillo azul */
+                0 0 20px #0000FF, /* Capa externa más difuminada para un efecto de brillo más grande */
+                0 0 30px #0000FF, /* Puedes ajustar los valores para personalizar el efecto */
+                0 0 40px #FFFFFF, /* Capa de brillo blanco */
+                0 0 50px #FFFFFF; /* Puedes añadir más capas si deseas un efecto más intenso */
+            font-size: 25px; /* Cambia el tamaño de la fuente a 30 puntos al pasar el mouse */
+        }
+        .brillo-texto {
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 30px #00FF;
+            animation: agrandarYReducir 5s ease forwards;
+        }
+        .brillo-texto:hover {
+            text-shadow:
+                0 0 20px #00FF;
+                0 0 30px #000FF;
+                0 0 48px #0000FF;
+        }
+        @keyframes agrandarYReducir {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(2); /* 200% del tamaño normal */
+            }
+            100% {
+                transform: scale(1); /* Vuelve al tamaño normal */
+            }
+        }
+        .contenedor-hola {
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center; /* Centrado vertical */
+            height: 100vh; /* Altura total de la ventana del navegador */
+            position: fixed; /* Posición fija en la ventana del navegador */
+            top: 0;
+            left: 0;
+            width: 100%; /* Anchura total de la ventana del navegador */
+            z-index: -1; /* Coloca el contenedor detrás de otros elementos */
+        }
+        .fuente-principal {
+            font-family: Vollkorn;
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0; /* Eliminar márgenes por defecto del elemento <p> */
+        }
+    </style>
+</head>
+<body>
+<div class="fondo-animado"></div>
+    <div class="header">
+        <a href="https://mini-uroki.com//pc/001.html">индивидуальные занятия</a>
+        <a href="https://mini-uroki.com//pc/002.html">разговорный клуб</a>
+        <a href="https://mini-uroki.com//pc/003.html">самостоятельное обучение</a>
+        <a href="https://mini-uroki.com//pc/004.html">бесплатные встречи в Zoom</a>
+    </div>
+    <div class="contenedor-hola">
+        <p class="fuente-principal brillo-texto">Мини-уроки <br>испанского языка</p>
+    </div>
+</body>
+</html>
