@@ -1,2 +1,20 @@
-<h1>¡Hola Martín!</h1>
-<p>Prueba de sitio web gratuito funcionando.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirección según orientación</title>
+    <script type="text/javascript">
+        function redireccionarSegunOrientacion() {
+            if (window.innerHeight > window.innerWidth) {
+                // Pantalla vertical
+                window.location.href = "https://mini-uroki.com/cl/inicio.html";
+            } else {
+                // Pantalla horizontal
+                window.location.href = "https://mini-uroki.com/pc/inicio.html";
+            }
+        }
+    </script>
+</head>
+<body onload="redireccionarSegunOrientacion();">
+    <!-- El cuerpo de la página estará vacío, ya que la redirección ocurre al cargar la página -->
+</body>
+</html>
